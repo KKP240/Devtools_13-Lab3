@@ -36,7 +36,7 @@ pipeline {
                     
                     // Login to Docker Hub
                     sh 'echo $DOCKER_CREDENTIALS_PSW | docker login --username $DOCKER_CREDENTIALS_USR --password-stdin'
-                    // Push the image
+                    // Push the imagessss
                     sh 'docker push $DOCKER_IMAGE'
                 }
             }
